@@ -122,7 +122,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -157,17 +156,51 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\FileCompleteController.cs" />
+    <Compile Include="Controllers\FileErrorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\UploadController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\FileStatus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\file-upload\css\bootstrap.css" />
+    <Content Include="Content\file-upload\css\bootstrap.min.css" />
+    <Content Include="Content\file-upload\cors\postmessage.html" />
+    <Content Include="Content\file-upload\cors\result.html" />
+    <Content Include="Content\file-upload\css\demo-ie8.css" />
+    <Content Include="Content\file-upload\css\demo.css" />
+    <Content Include="Content\file-upload\css\jquery.fileupload-noscript.css" />
+    <Content Include="Content\file-upload\css\jquery.fileupload-ui-noscript.css" />
+    <Content Include="Content\file-upload\css\jquery.fileupload-ui.css" />
+    <Content Include="Content\file-upload\css\jquery.fileupload.css" />
+    <Content Include="Content\file-upload\css\style.css" />
+    <Content Include="Content\file-upload\img\loading.gif" />
+    <Content Include="Content\file-upload\img\progressbar.gif" />
+    <Content Include="Content\file-upload\js\app.js" />
+    <Content Include="Content\file-upload\js\canvas-to-blob.min.js" />
+    <Content Include="Content\file-upload\js\cors\jquery.postmessage-transport.js" />
+    <Content Include="Content\file-upload\js\cors\jquery.xdr-transport.js" />
+    <Content Include="Content\file-upload\js\jquery.blueimp-gallery.min.js" />
+    <Content Include="Content\file-upload\js\jquery.fileupload-angular.js" />
+    <Content Include="Content\file-upload\js\jquery.fileupload-audio.js" />
+    <Content Include="Content\file-upload\js\jquery.fileupload-image.js" />
+    <Content Include="Content\file-upload\js\jquery.fileupload-jquery-ui.js" />
+    <Content Include="Content\file-upload\js\jquery.fileupload-process.js" />
+    <Content Include="Content\file-upload\js\jquery.fileupload-ui.js" />
+    <Content Include="Content\file-upload\js\jquery.fileupload-validate.js" />
+    <Content Include="Content\file-upload\js\jquery.fileupload-video.js" />
+    <Content Include="Content\file-upload\js\jquery.fileupload.js" />
+    <Content Include="Content\file-upload\js\jquery.iframe-transport.js" />
+    <Content Include="Content\file-upload\js\load-image.all.min.js" />
+    <Content Include="Content\file-upload\js\main.js" />
+    <Content Include="Content\file-upload\js\tmpl.min.js" />
+    <Content Include="Content\file-upload\js\vendor\jquery.ui.widget.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -192,6 +225,7 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <Content Include="Content\file-upload\.jshintrc" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -206,7 +240,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
-    <Content Include="Content\Site.css" />
+    <Content Include="Content\file-upload\css\Site.css" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
